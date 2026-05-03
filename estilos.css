@@ -1,0 +1,191 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+header {
+    background: rgb(33, 4, 129);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.blog {
+    color: rgb(52, 130, 255);
+    font-weight: bold;
+}
+
+/* NAV */
+nav {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    gap: 0;
+    margin: 0;
+}
+
+nav a {
+    padding: 15px 0;
+    color: white;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+    transition: 0.3s;
+    display: block;
+    border-radius: 0;
+    margin: 0;
+}
+
+/* EFECTO HOVER */
+nav a:hover {
+    background: rgb(52, 130, 255); /* El mismo azul del blog */
+    color: white;
+    border-radius: 4px;           /* Bordes redondeados opcionales */
+}
+
+/* CONTENIDO */
+main {
+    display: flex;
+    flex: 1;
+    /* background-color: green; */
+}
+
+/* 🔥 CLAVE: secciones ocultas */
+section {
+    display: none;
+    flex: 3;
+    padding: 10px;
+}
+
+/* 🔥 SOLO ESTA SE MUESTRA */
+section.active {
+    display: flex;          
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;    
+    flex: 3;                
+    text-align: center;     
+}
+
+
+#inicio {
+    /* background-color: blue; */
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+#inicio img {
+    padding: 50px;
+    height: auto;
+    width: 300px;
+}
+
+#inicio .linkUMG {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    display: block;
+    text-align: center  ;
+    background-color: rgba(204, 48, 46);
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+#inicio .linkUMG:hover {
+    background-color: rgb(120, 29, 27);
+    color: white;
+}
+
+#contacto form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contacto form button {
+    width: 300px;
+    height: 50px;
+    margin: 30px;
+    background-color: rgb(18, 231, 18);
+    border: none;
+    border-radius: 5px;
+    color: rgb(3, 99, 3);
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+#contacto form button:hover {
+    color: rgb(18, 231, 18);
+    background-color: rgb(3, 99, 3);
+}
+
+#contacto form label{
+    margin: 10px;
+}
+
+#contacto form input {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    border-color: rgba(187, 187, 187, 0.295);
+    height: 40px;
+    width: 600px;
+}
+
+#contacto form textarea {
+    border-color: rgba(187, 187, 187, 0.295);
+    height: 100px;
+    width: 600px;
+}
+
+#contacto #mensajeEnviado {
+    color: rgb(12, 126, 12);
+    font-weight: bold;
+}
+
+section p {
+    max-width: 600px; 
+    line-height: 1.6;  
+    margin-bottom: 15px;
+}
+
+/* ASIDE MODIFICADO */
+aside {
+    flex: 1;
+    background: #f4f4f4; 
+    padding: 30px;  
+    border-left: 3px solid rgb(33, 4, 129); 
+    font-size: 0.9em;   
+}
+
+aside h3 {
+    margin-top: 0;
+    color: rgb(33, 4, 129);
+    font-size: 1.2em;
+}
+
+aside hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 15px 0;
+}
+
+/* FOOTER */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

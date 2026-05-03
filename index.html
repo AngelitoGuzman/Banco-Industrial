@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- PASO 1: Configuración básica -->
+    <meta charset="UTF-8">
+    <title>Angel's Blog</title>
+    <link rel="icon" href="img/logoUMG.png" type="image/png">
+
+    <!-- PASO 2: Conectar CSS -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <!-- PASO 3: Encabezado -->
+    <header>
+        <h1>MI <span class="blog">BLOG</span> PERSONAL</h1>
+    </header>
+
+    <!-- PASO 4: Menú de navegación -->
+    <nav>
+        <!-- IMPORTANTE:
+             onclick llama a una función de JavaScript -->
+        <a onclick="mostrarSeccion('inicio')">INICIO</a>
+        <a onclick="mostrarSeccion('sobreMi')">SOBRE MÍ</a>
+        <a onclick="mostrarSeccion('contacto')">CONTACTO</a>
+    </nav>
+
+    <!-- PASO 5: Contenido principal -->
+    <main>
+
+        <!-- SECCIÓN 1: INICIO -->
+        <!-- class="active" hace que esta se vea al inicio -->
+        <section id="inicio" class="active">
+            <h2>Inicio</h2>
+            <p>Bienvenido a mi página web.</p>
+
+            <!-- Imagen -->
+            <img src="img/logoUMG.png" alt="Mi imagen">
+
+            <br><br>
+
+            <!-- Enlace -->
+            <a href="https://umg.edu.gt/" target="_blank" class="linkUMG">Ir a mi UMG</a>
+        </section>
+
+        <!-- SECCIÓN 2: SOBRE MÍ -->
+        <section id="sobreMi">
+            <h2>Sobre mí</h2>
+          <p>
+            ¡Hola! Soy estudiante de la carrera de <strong>Ingeniería en Sistemas</strong>. 
+            Actualmente me encuentro cursando <em>Introducción a Sistemas</em>, donde estoy 
+            sentando las bases de mi formación profesional y lógica de programación.
+        </p>
+        <p>
+            Me apasiona la tecnología y cómo esta puede resolver problemas del mundo real. 
+            Este blog es un espacio donde documento mis avances, proyectos y los conocimientos 
+            que voy adquiriendo día con día en la universidad.
+        </p>
+        <p>
+            Mi meta es especializarme en el desarrollo de software y seguir aprendiendo 
+            nuevas herramientas para construir soluciones innovadoras.
+        </p>
+        </section>
+
+        <!-- SECCIÓN 3: CONTACTO -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+
+            <!-- Formulario -->
+            <form onsubmit="enviarFormulario(event)">
+                <label>Nombre:</label>
+                <input type="text" id="nombre" required>
+
+                <label>Correo:</label>
+                <input type="email" required>
+
+                <label>Mensaje:</label>
+                <textarea required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <!-- Mensaje -->
+            <p id="mensajeEnviado"></p>
+        </section>
+
+        <!-- BARRA LATERAL -->
+        <aside>
+            <h3>Información Académica</h3>
+            <p><strong>Universidad:</strong> Mariano Gálvez de Guatemala</p>
+            <p><strong>Facultad:</strong> Ingeniería en Sistemas</p>
+            <p><strong>Ciclo:</strong> 2026</p>
+            <hr>
+            <p>Actualmente cursando <em>Introducción a Sistemas</em>, enfocado en el desarrollo de pensamiento lógico y bases tecnológicas.</p>
+        </aside>
+
+    </main>
+
+    <!-- PIE -->
+    <footer>
+        <p>© 2026 Angel Corporation</p>
+    </footer>
+
+    <!-- PASO FINAL: Conectar JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
